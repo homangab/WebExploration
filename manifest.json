@@ -1,0 +1,35 @@
+
+
+{
+"manifest_version": 2,
+"name": "My Addon",
+"version": "96.0",
+
+
+ "permissions": [
+    "activeTab",
+    "history",
+    "tabs",
+   "topSites"
+  ],
+"content_security_policy": "script-src 'self' https://home.iitk.ac.in; object-src 'self'",
+
+"browser_action": {
+"browser_style": true,
+  "default_icon": {
+    "48": "border-48.png"    
+  },
+ 
+  "default_title": "Download Log",
+  "default_popup": "browseraction.html"
+},
+
+"chrome_url_overrides" : {
+    "newtab": "trialhtml.html"
+  },
+
+
+"description": "Description here"
+
+}
+
